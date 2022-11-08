@@ -1,0 +1,43 @@
+﻿<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        var uAgent = navigator.userAgent.toLowerCase();
+
+        //< 모바일 기기 추가시 등록
+        var mobilePhones = new Array('iphone', 'ipad', 'ipod', 'android', 'blackberry', 'windows ce',
+            'nokia', 'webos', 'opera mini', 'sonyericsson', 'opera mobi', 'iemobile',
+            'windows phone');
+
+        var isMobile = false;
+
+        for (var i = 0; i < mobilePhones.length; ++i) {
+            if (uAgent.indexOf(mobilePhones[i]) > -1) {
+                isMobile = true;
+
+                break;
+            }
+        }
+
+        var isiPad = uAgent.indexOf('ipad') > -1 || uAgent.indexOf('macintosh') > -1 && 'ontouchend' in document;
+
+
+        //모바일인 경우
+
+        if (isMobile || isiPad) {
+            document.location = 'https://www.miraeassetpay.kr/mobile/index.html';
+        } else {
+            document.location = 'https://www.miraeassetpay.kr/pc/index.html';
+        }
+
+
+    });
+
+</script>
+
+<title>미래에셋PAY</title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="미래에셋PAY">
+<meta property="og:description" content="">

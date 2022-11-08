@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700&display=swap');
+/* font-family: 'Gothic A1', sans-serif; */
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 60px 280px 0;
+    height: 280px;
+    background: #e8e8e8;
+}
+footer * {
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.footerBox {
+    position: relative;
+}
+.footerBox > div {
+    position: absolute;
+}
+.footerBox .leftBox {
+    left: 0;
+}
+.footerBox .rightBox {
+    right: 0;
+}
+
+.leftBox .info .imform {
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #515151;
+}
+
+.leftBox .info {
+    margin: 30px 0 25px;
+}
+
+.leftBox .info,
+.rightBox .policy {
+    font-size: 0;
+}
+
+.leftBox .info li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #515151;
+}
+
+.rightBox .policy li {
+    display: inline-block;
+    margin-right: 40px;
+    line-height: 35px;
+    font-size: 16px;
+    color: #303030;
+    cursor: pointer;
+}
+.rightBox .policy li:last-of-type {
+    margin: 0;
+}
+
+.leftBox .info li::after,
+.rightBox .policy li::after {
+    content: "";
+    display: inline-block;
+    margin: 0 0 0 20px;
+    width: 1px;
+    height: 14px;
+    background: #515151;
+}
+.rightBox .policy li::after {
+    margin: 0 0 0 40px;
+    height: 12px;
+}
+
+.leftBox .info li:last-of-type::after,
+.rightBox .policy li:last-of-type::after {
+    display: none;
+}
+
+.leftBox .copyR {
+    font-size: 16px;
+    color: #515151;
+}

@@ -1,0 +1,50 @@
+.contents {
+  position: relative;
+  width: 750px;
+  margin-top: 300px;
+  text-align: center;
+}
+.contents > #info {
+  padding-top: 0;
+  width: 90%;
+  height: 100%;
+  margin-bottom: 150px;
+}
+
+.local-nav.on {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: saturate(180%) blur(15px);
+  -moz-backdrop-filter: saturate(180%) blur(15px);
+  -o-backdrop-filter: saturate(180%) blur(15px);
+  backdrop-filter: saturate(180%) blur(15px);
+}
+
+.contents > img {
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.chart1_container {
+  position: absolute;
+  width: 650px;
+  top: 4138px;
+  left: 50px;
+  overflow-x: scroll;
+}
+
+.chart2_container {
+  position: absolute;
+  width: 650px;
+  bottom: 1000px;
+  left: 50px;
+  overflow-x: scroll;
+}
+
+.chart3_container {
+  position: absolute;
+  width: 650px;
+  bottom: 350px;
+  left: 50px;
+  overflow-x: scroll;
+}

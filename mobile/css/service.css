@@ -1,0 +1,388 @@
+.scroll-section {
+  position: relative;
+  text-align: center;
+  background: #fff;
+}
+
+.sticky-elem {
+  display: none;
+  position: fixed;
+}
+
+#show-scene-0 #scroll-section-0 .sticky-elem,
+#show-scene-1 #scroll-section-1 .sticky-elem,
+#show-scene-2 #scroll-section-2 .sticky-elem,
+#show-scene-3 #scroll-section-3 .sticky-elem,
+#show-scene-4 #scroll-section-4 .sticky-elem,
+#show-scene-0 #scroll-section-1 .sticky-elem,
+#show-scene-2 #scroll-section-1 .sticky-elem,
+#show-scene-3 #scroll-section-2 .sticky-elem {
+  display: block;
+}
+
+/* scroll-section0 */
+#scroll-section-0 .sticky-elem-canvas {
+  width: 750px;
+  height: 1288px;
+  overflow-y: hidden;
+  position: fixed;
+}
+
+#scroll-section-0 .sticky-elem-canvas canvas {
+  width: 750px;
+  height: 1288px;
+  position: absolute;
+  left: 0;
+}
+
+#scroll-section-0 .sticky-elem-canvas.c_fixed {
+  position: fixed;
+}
+
+#scroll-section-0 .sticky-elem-canvas.c_absolute {
+  position: absolute;
+}
+
+.sticky-elem-canvas img.sticky-iphone {
+  position: absolute;
+  width: 429px;
+  height: 746px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translate3d(0px, 100%, 0px);
+}
+
+#show-scene-0 #scroll-section-0 .sticky-elem.main-message {
+  width: 100%;
+  top: 700px;
+}
+
+#scroll-section-0 .sticky-tit {
+  flex-grow: 0;
+  background: linear-gradient(to right, #f58220, #ff843f);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.47;
+  letter-spacing: -1.5px;
+  text-align: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#scroll-section-0 .sticky-txt {
+  flex-grow: 0;
+  font-size: 76px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -3.8px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#scroll-section-0 .sticky-desc-message {
+  flex-grow: 0;
+  object-fit: contain;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -1.4px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#scroll-section-0 .sticky-desc-message2 {
+  margin-top: 30px;
+  font-size: 23px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -1.15px;
+  text-align: center;
+  color: #555;
+}
+
+#scroll-section-0 .service-top-text {
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -1.1px;
+  text-align: left;
+  color: #777;
+  position: fixed;
+  z-index: 1;
+  top: 187px;
+  left: 50%;
+  margin-left: -340px;
+  width: 420px;
+}
+
+/* scroll-section1 */
+#scroll-section-1 {
+  padding-top: 200px;
+  background: #fff;
+  z-index: 1;
+}
+#scroll-section-1 .desc-message {
+  z-index: 1;
+  top: 10vh;
+  opacity: 0;
+}
+#scroll-section-1 .desc-message.nofix {
+  position: absolute;
+}
+#scroll-section-1 .sticky-tit {
+  font-size: 4vh;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -3.6px;
+  color: #101010;
+  margin-bottom: 4vh;
+}
+
+#scroll-section-1 .sticky-desc-message {
+  font-size: 2vh;
+  line-height: 1.5;
+  letter-spacing: -2.1px;
+  color: #101010;
+  margin-bottom: 4vh;
+}
+
+#scroll-section-1 .iphone-pop {
+  width: 20vh;
+  height: 5.5vh;
+  line-height: 5.5vh;
+  background: #f58220;
+  color: #fff;
+  font-size: 2vh;
+  font-weight: bold;
+  letter-spacing: -1.3px;
+  border-radius: 40px;
+  margin: 0 auto;
+  transition: transform 0.2s;
+}
+
+.model-pop {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  width: 750px;
+  height: 100vh;
+  z-index: 30;
+  top: 0;
+  transition: opacity 0.2s;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.model-pop .model-pop-content {
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  width: 604px;
+  height: 700px;
+  transform: scale(0);
+  text-align: left;
+  padding: 150px 50px;
+  transition: all 0.2s;
+}
+.model-pop .close-pop {
+  position: absolute;
+  background: url("../images/service/section1/exit.png") no-repeat center;
+  width: 50px;
+  height: 50px;
+  right: 50px;
+  top: 50px;
+}
+.model-pop .pop-tit {
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -1.47px;
+  margin-bottom: 70px;
+}
+.model-pop .pop-message {
+  font-size: 27px;
+  line-height: 1.5;
+  color: #555;
+}
+
+#scroll-section-1 .iphone {
+  text-align: center;
+  width: 750px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 100vh;
+  background: #fff;
+  transform: translate3d(0px, 100vh, 0px);
+}
+
+#scroll-section-1 .iphone img {
+  display: inline;
+  height: 50vh;
+  transform: translateX(10vw);
+}
+
+/* scroll-section-2 */
+#scroll-section-2 {
+  background: #f8f8fa;
+}
+#scroll-section-2 .sticky-elem-canvas {
+  top: 50vh;
+  transform: translateY(-80%);
+}
+
+#scroll-section-2 .sticky-elem-canvas.nofix {
+  position: absolute;
+  top: 90vh;
+}
+
+#scroll-section-2 .desc-message {
+  top: 70vh;
+  opacity: 0;
+}
+
+#scroll-section-2 .sticky-tit {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -3.6px;
+  margin-bottom: 65px;
+}
+
+#scroll-section-2 .sticky-desc-message {
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: -2.1px;
+}
+
+/* scroll-section-3 */
+#scroll-section-3 {
+  background: #f8f8fa;
+  padding-bottom: 150px;
+}
+#scroll-section-3 .card {
+  width: 620px;
+  height: 810px;
+  border-radius: 25px;
+  box-shadow: 0 12px 50px 0 rgba(0, 0, 0, 0.05);
+  padding-top: 100px;
+  margin: 0 auto 50px;
+  background: #fff;
+  opacity: 0;
+}
+
+#scroll-section-3 .card img {
+  margin: 0 auto;
+}
+
+#scroll-section-3 .card .card-tit {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: -2.1px;
+  margin: 80px auto 50px;
+}
+
+#scroll-section-3 .card .card-message {
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: -2.1px;
+  color: #555;
+}
+
+/* scroll-section-4 */
+#scroll-section-4 {
+  padding-top: 80px;
+  text-align: left;
+}
+
+#scroll-section-4 .news-tit {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1.62px;
+  margin: 0 0 70px 65px;
+}
+
+#scroll-section-4 .last-txt {
+  padding: 0 70px 0 65px;
+  line-height: 1.7;
+  font-size: 25px;
+  letter-spacing: -1.3px;
+  text-align: left;
+  color: #888;
+  margin-bottom: 100px;
+}
+
+#scroll-section-4 .last-txt p {
+  margin-bottom: 30px;
+  text-indent: -27px;
+  margin-left: 27px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding: 0px 50px;
+}
+
+.swiper-slide {
+  width: 505px;
+  margin-right: 50px;
+}
+
+#scroll-section-4 .news-img {
+  margin-bottom: 50px;
+}
+#scroll-section-4 .news-company {
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.69;
+  letter-spacing: -1.3px;
+  text-align: left;
+  color: #f58220;
+  margin-bottom: 35px;
+}
+
+#scroll-section-4 .news-day {
+  color: #7d7d7d;
+  margin-left: 15px;
+}
+
+#scroll-section-4 .news-message {
+  font-size: 32px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -1.6px;
+  text-align: left;
+  color: #303030;
+  margin-bottom: 45px;
+}
+
+#scroll-section-4 .news-link {
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.64;
+  letter-spacing: -1.4px;
+  text-align: left;
+  color: #cdcdcd;
+}
